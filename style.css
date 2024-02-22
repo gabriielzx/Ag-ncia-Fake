@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    /*faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.*/
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    /*Usado para definir que todas as fontes do site será Roboto*/
+}
+
+.navbar {
+    display: flex;
+    /* Permite criar layouts flexíveis, facilitando o alinhamento e distribuição de itens em um contêiner*/
+    flex-flow: row wrap;
+    /*O flex-flow quer dizer (em linha) /row wrap serve pra ficar dentro do invólucro (que é cobrir envolver algo)*/
+    height: 100px;
+    /*height é a altura*/
+    background-color: white;
+    /*Colocando cor na barra de navegação*/
+    justify-content: center;
+    align-items: center;
+    /*Align-items serve para alinha os itens dos links no centro, na mesma linha do título*/
+    position: fixed;
+    /*Ou seja, a barra de navegação será fixa*/
+    width: 100%;
+    /*Colocndo a tamanho pra ele ficar organizado, na parte de cima*/
+}
+
+.logo {
+    flex: 10%;
+    /*Tamanho do de espaço do título da agência*/
+    margin-left: 10%;
+    /*Colocando uma margem a esquerda do site*/
+    text-align: left;
+    /*Para alinhar o nome da agência a esquerda*/
+}
+
+.logo h1 {
+    font-family: 'Lobster', sans-serif;
+    /* Fonte do Título h1*/
+    color: #ac1c40;
+    /*Cor do título*/
+    font-size: 34px;
+    /*Tamanho da fonte*/
+}
+
+.menu {
+    flex: 70%;
+    /*Tamanho de ocupação dos links do menu*/
+    text-align: right;
+    /*Usado para alinha os links para a direita*/
+    padding: 20px;
+    /*É usado pra definir a distância entre o conteúdo de um elemento e suas bordas.*/
+}
+
+.menu a {
+    color: #ac1c40;
+    /*Cor dos links*/
+    text-decoration: none;
+    /*Pra não ficar com aquela linha em baixo*/
+    font-size: 20px;
+    /*Tamanho da fonte*/
+    padding: 20px 16px;
+    /*São 20 de altura e 16 de largura*/
+}
+
+.menu a:hover {
+    /*Quando o mouse estiver sobre os links:*/
+    color: #240b29;
+    /* Os links vão ficar dessa cor*/
+    border-top: 4px solid #ac1c40;
+    /*Borda que vai aparecer, quando passar o mouse em cima dos links*/
+}
+
+#botao {
+    background:#ac1c40;
+    /*Definindo a cor do botão*/
+    padding: 10px 25px;
+    /*Altura do botão é de 10px e largura 25px*/
+    color: white;
+    /*A cor da letra branco*/
+    border-radius: 5px;
+    /*Fazendo uma borda arredondada*/
+    margin-right: 10px;
+    /*Fazendo uma margem a direita de 10 cm*/
+    margin-left: 5%;
+    /*Margem a esquerda será de 5% de afastamento entre os links do botão "Fale-Connosco"*/
+}
+
+#botao:hover {
+    /*Quando o mouse passar em cima do botão "Fale-Conosco"*/
+    border: none;
+    /*Não vai ter nenhuma borda no botão*/
+    background: #240b29;
+    /*Quando o mouse passar por cima do link do botão, vai aparecer essa cor*/
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    /*Coloca o conteúdo em linha e permite a quebra de linha*/
+    background: white;
+    justify-content: center;
+    /*Pra ficar alinhado no centro*/
+    align-items: center;
+    padding-top: 100px;
+}
+
+.titulo {
+    margin-left: 10%;
+    /*Continuando com a margem a esquerda de 10%*/
+    flex: 30%;
+    /*O flex define o tamanho inicial que um item deve ter, antes que o espaço ao seu redor seja distribuído.*/
+}
+
+.titulo h2 {
+    font-weight: 900;
+    /*especifica o peso ou a intensidade da fonte (ex.: negrito).*/
+    font-size: 20px;
+    /*Tamanho da fonte*/
+    color: #ac1c40;
+    padding: 0;
+    margin: 0;
+}
+
+.titulo p {
+    color: gray;
+    text-align: left;
+    /*Alinhamento do texto á esquerda */
+}
+
+.contact-btn {
+    /*Estilizando o botão*/
+    display: inline-block;
+    /* serve pra cada elemento da lista ocupar uma linha*/
+    background: #240b29;
+    /*Cor do botão*/
+    padding: 20px;
+    color: white;
+    /*Cor do link das letras do botão*/
+    text-transform: uppercase;
+    /*Transformando o texto do botão para tudo maiúsculo*/
+    border-radius: 10px;
+    /*Borda arredondada*/
+    text-decoration: none;
+    /*Pra poder tirar aquela linha que fica em baixo do link*/
+}
+
+.contact-btn:hover {
+    /*Quando o mouse passar por cima do botão.*/
+    background: #ac1c40;
+    /*Mudará para essa cor*/
+}
+
+.img-titulo {
+    margin-right: 10%;
+    /*Margem da direita de 10% pra continuar com o mesmo padão do menu de navegação*/
+    flex: 30%;
+    text-align: center;
+    /*Pra centralizar a imagem*/
+}
+
+section {
+    display: inline-block;
+    margin-top: 80px;
+    /*Margem de 80px*/
+    margin-left: 5%;
+    /*Uma margem a esquerda de 5%*/
+    margin-right: 5%;
+    /*Uma margem a direita de 5%*/
+    text-align: center;
+    /*Pro texto ficar centralizado.*/
+    padding: 5%;
+    /*Altura da seção será de 5%*/
+    width: 90%;
+}
+
+section h2 {
+    /*Seção h2*/
+    width: 100%;
+    font-size: 50px;
+    /*Tamanho da fonte*/
+    margin: 0;
+    font-family: 'Lobster', sans-serif;
+    /*Usando a mesma fonte Lobster*/
+    font-weight: bold;
+    /*Fonte em negrito*/
+    color: #ac1c40;
+    /*A cor*/
+}
+
+.servicos {
+    display: inline-block;
+    margin-top: 5%;
+    /*Fazendo uma margem de 5% entre o título, "O que podemos fazer pelo seu negócio" */
+}
+
+.card {
+    display: inline-block;
+    /* permite definir uma largura e altura no elemento.*/
+    width: 30%;
+    /*Vai ter uma largura de 30%*/
+    padding: 20px;
+    /*Altura da seção será de 20%*/
+    margin: 1%;
+    /*Uma margem de 1% entre cada um dos blocos, totalizando 3%*/
+    border: 1px solid #240b29;
+    /*Uma borda de 1px entre os blocos*/
+    border-radius: 15px;
+    /*Arredondando as bordas dos cars*/
+    cursor: pointer;
+    /*Define o cursor do mouse como um "ponteiro" sobre determinado elemento. Onde mostrará aquela mãozinha do mouse*/
+}
+
+.texto-oculto {
+    display: none;
+    /*Usado para o textos ocultos desaparecer*/
+}
+
+.card:hover {
+    /*Quando o mouse passar em cima dos cads vai acontecer: */
+    background: #240b29;
+    /*O funfo vai ser da cor rosa*/
+    color: white;
+    /*A cor das letras do texto vai ficar branco*/
+    padding: 40px;
+}
+
+.card:hover img {
+    /*Quando mouse passar por cima dos cads, o que que vai acontecer com a imagem*/
+    display: none;
+    /*Pra desaparecer as imagens*/
+}
+
+.card:hover .card-texto {
+    /*Quando o mouse passar por cima dos cards, o que vai ocontecer com o texto*/
+    display: none;
+    /*Usado para não aparecer mais nada*/
+}
+
+.card:hover .texto-oculto {
+    /*Quando o mouse passar em cima dos cads, o que vai acontecer com os textos ocultos*/
+    display: block;
+    /*Vai aparecer o texto oculto e vai desaparecer o texto padão*/
+}
+
+footer {
+    /*Roda pé.(Final do site)*/
+    margin-top: 100px;
+    /*Fazendo uma margem de 100px entre o topo*/
+    height: 400px;
+    background-image: linear-gradient(180deg, #ac1c40, #090422, black);
+    /*Fazendo um degrader der cor, de 180deg.*/
+    text-align: center;
+    /* Alinhamento do texto ao centro*/
+    border-top: 5px solid #240b29;
+    /*Colocando uma borda sólida, acima do roda pé*/
+}
+
+.roda-pe {
+    padding: 100px;
+}
+
+.agencia {
+    font-family: 'Lobster', sans-serif;
+    /*Fonte do Título */
+    color: white;
+    /*Cor*/
+    font-size: 34px;
+}
+
+.Feito-por {
+    color: white;
+    /*Cor*/
+    font-size: 13px;
+}
